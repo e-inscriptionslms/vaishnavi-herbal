@@ -214,7 +214,7 @@ p {
 
 /*------------------------------------------------------------------ HEADER -------------------------------------------------------------------*/
 .main-top {
-    background: var(--green);
+    background: black;
     padding: 10px 0px;
 }
 
@@ -3126,4 +3126,23 @@ ul.cart-list>li.total>.btn:hover {
     font-weight: 700;
     padding: 12px 25px;
     border: none;
+}
+
+/* logo css */
+.logo {
+    width: 100px;
+    aspect-ratio: 3 / 4;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+
+.text-dark-brown {
+    color: brown;
+}
+.button_icon{
+    background-color: #000;
+}
+.section-title{
+    font-size: 50px;
 }
