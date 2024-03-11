@@ -9,8 +9,8 @@
 }
 
 .product-info {
-     
-    height: 100vh;
+
+    /* height: 100vh; */
     flex: 1;
     padding: 20px;
     background-color: #fff;
