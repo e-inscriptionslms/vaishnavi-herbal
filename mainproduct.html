@@ -21,17 +21,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
     <!-- Site CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Responsive CSS -->
@@ -39,8 +28,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="./produt.css">
-
-
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -118,7 +105,7 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./mainproduct.html">products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">products</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -180,237 +167,123 @@
         </div>
     </div>
     <!-- End Top Search -->
-
-
-    <div class="containerr">
-        <div class="product-info">
-            <h1>Ayurvedic Syrup</h1>
-            <h2>price <span>100</span> </h2>
-            <div class="dropdown">
-                <button class="dropdown-button">QUANTITY</button>
-                <div class="dropdown-content">
-                    <a href="#"> 1</a>
-                    <a href="#"> 2</a>
-                    <a href="#"> 3</a>
-                    <a href="#"> 4</a>
-                </div>
-            </div>
-            <p>Patanjali Nutrela Diabetic Care is a scientifically designed formulation as per ESPEN Guidelines to help
-                manage blood sugar levels and weight. Diabetic Care is 100% Vegetarian, enriched with bio fermented
-                vitamins, Gluten free, GMO free, trans fat free, preservative free, easy to incorporate in daily
-                lifestyle with no added sugar makes it an ideal nutrition for diabetic. A potent herbal blend with low
-                GI and high fiber to help you meet 100% RDA for diabetics.</p>
-                <div class="buttons">
-                    <button href="" id="button1" class="btn help-btn">Benefits</button>
-                    <button href="" id="button2" class="btn show-btn">Ingredients</button>
-                    <button href="" id="button3" class="btn more-btn">How to use</button>
-                </div>
-            <p id="hiddenText" class="hidden">This text is hidden by default. It will be shown when the button is
-                clicked.</p>
-
-
-        </div>
-        <div class="product-image">
-            <div class="main-image">
-                <img id="mainImg" src="./images/IMG_1447.png" alt="Main Image">
-            </div>
-
-            <div class="thumbnail-container">
-                <div class="thumbnail" onclick="showImage('./images/IMG_1447.png')">
-                    <img src="./images/IMG_1447.png" alt="Thumbnail 1">
-                </div>
-                <div class="thumbnail" onclick="showImage('./images/IMG_1448.png')">
-                    <img src="./images/IMG_1448.png" alt="Thumbnail 2">
-                </div>
-
+    <div class="container">
+        <div class="card">
+            <img id="mainImage1" src="./images/IMG_1455.png" alt="Main Image 1">
+            <div class="thumbnails">
+                <img class="thumbnail" src="./images/IMG_1456.png" alt="Thumbnail 1"
+                    onclick="changeMainImage('mainImage1', './images/IMG_1456.png')">
+                <img class="thumbnail" src="./images/IMG_1455.png" alt="Thumbnail 2"
+                    onclick="changeMainImage('mainImage1', './images/IMG_1455.png')">
             </div>
         </div>
-
-    </div>
-
-
-    <div class="containerr">
-
-        <div class="product-image">
-            <img src="./images/IMG_1447.png" alt="Product Image">
+        <div class="card">
+            <img id="mainImage2" src="./images/IMG_1431.png" alt="Main Image 2">
+            <div class="thumbnails">
+                <img class="thumbnail" src="./images/IMG_1432.png" alt="Thumbnail 2"
+                    onclick="changeMainImage('mainImage2', './images/IMG_1432.png')">
+                <img class="thumbnail" src="./images/IMG_1431.png" alt="Thumbnail 2"
+                    onclick="changeMainImage('mainImage2', './images/IMG_1431.png')">
+            </div>
+        </div>
+        <div class="card">
+            <img id="mainImage3" src="./images/IMG_1449.png" alt="Main Image 3">
+            <div class="thumbnails">
+                <img class="thumbnail" src="./images/IMG_1449.png" alt="Thumbnail 3"
+                    onclick="changeMainImage('mainImage3', './images/IMG_1449.png')">
+                <img class="thumbnail" src="./images/IMG_1450.png" alt="Thumbnail 3"
+                    onclick="changeMainImage('mainImage3', './images/IMG_1450.png')">
+            </div>
+        </div>
+        <div class="card">
+            <img id="mainImage4" src="./images/IMG_1443.png" alt="Main Image 4">
+            <div class="thumbnails">
+                <img class="thumbnail" src="./images/IMG_1443.png" alt="Thumbnail 4"
+                    onclick="changeMainImage('mainImage4', './images/IMG_1443.png')">
+                <img class="thumbnail" src="./images/IMG_1444.png" alt="Thumbnail 4"
+                    onclick="changeMainImage('mainImage4', './images/IMG_1444.png')">
+            </div>
+        </div>
+        <div class="card">
+            <img id="mainImage5" src="./images/IMG_1439.png" alt="Main Image 5">
+            <div class="thumbnails">
+                <img class="thumbnail" src="./images/IMG_1439.png" alt="Thumbnail 5"
+                    onclick="changeMainImage('mainImage5', './images/IMG_1439.png')">
+                <img class="thumbnail" src="./images/IMG_1440.png" alt="Thumbnail 5"
+                    onclick="changeMainImage('mainImage5', './images/IMG_1440.png')">
+            </div>
+        </div>
+        <div class="card">
+            <img id="mainImage6" src="./images/IMG_1451.png" alt="Main Image 6">
+            <div class="thumbnails">
+                <img class="thumbnail" src="./images/IMG_1451.png" alt="Thumbnail 6"
+                    onclick="changeMainImage('mainImage6', './images/IMG_1451.png')">
+                <img class="thumbnail" src="./images/IMG_1444.png" alt="Thumbnail 6"
+                    onclick="changeMainImage('mainImage6', './images/IMG_1444.png')">
+            </div>
+        </div>
+        <div class="card">
+            <img id="mainImage7" src="./images/IMG_1453.png" alt="Main Image 7">
+            <div class="thumbnails">
+                <img class="thumbnail" src="./images/IMG_1453.png" alt="Thumbnail 7"
+                    onclick="changeMainImage('mainImage7', './images/IMG_1453.png')">
+                <img class="thumbnail" src="./images/IMG_1444.png" alt="Thumbnail 7"
+                    onclick="changeMainImage('mainImage7', './images/IMG_1444.png')">
+            </div>
         </div>
 
-        <div class="product-info">
-            <h1>Product Information page</h1>
-            <p>Patanjali Nutrela Diabetic Care is a scientifically designed formulation as per ESPEN Guidelines to help
-                manage blood sugar levels and weight. Diabetic Care is 100% Vegetarian, enriched with bio fermented
-                vitamins, Gluten free, GMO free, trans fat free, preservative free, easy to incorporate in daily
-                lifestyle with no added sugar makes it an ideal nutrition for diabetic. A potent herbal blend with low
-                GI and high fiber to help you meet 100% RDA for diabetics.</p>
-
-            <div class="feature-container">
-                <ul class="left-feature-list">
-                    <li>
-                        <img src="./images/images.png" style="width: 10%; height: 20px;" alt="Vegetarian">
-                        <span>100% Vegetarian</span>
-                    </li>
-                    <li>
-                        <img src="./images/images.png" style="width: 10%; height: 20px;" alt="Vegetarian">
-                        <span>No Sugar Added</span>
-                    </li>
-                    <li>
-                        <img src="./images/images.png" style="width: 10%; height: 20px;" alt="Vegetarian">
-                        <span>No Artificial Color & Flavour</span>
-                    </li>
-                </ul>
-                <ul class="right-feature-list">
-                    <li>
-                        <img src="./images/images.png" style="width: 10%; height: 20px;" alt="Vegetarian">
-                        <span>Preservative Free</span>
-                    </li>
-                    <li>
-                        <img src="./images/images.png" style="width: 10%; height: 20px;" alt="Vegetarian">
-                        <span>Chemical Free</span>
-                    </li>
-                    <li>
-                        <img src="./images/images.png" style="width: 10%; height: 20px;" alt="Vegetarian">
-                        <span>Trans Fat Free</span>
-                    </li>
-                </ul>
+        <div class="card">
+            <img id="mainImage8" src="./images/IMG_1447.png" alt="Main Image 8">
+            <div class="thumbnails">
+                <img class="thumbnail" src="./images/IMG_1447.png" alt="Thumbnail 8"
+                    onclick="changeMainImage('mainImage8', './images/IMG_1447.png')">
+                <img class="thumbnail" src="./images/IMG_1448.png" alt="Thumbnail 8"
+                    onclick="changeMainImage('mainImage8', './images/IMG_1448.png')">
             </div>
-
         </div>
-    </div>
-
-
-
-    <!-- Start Instagram Feed  -->
-    <div class="instagram-box">
-        <div class="main-instagram owl-carousel owl-theme">
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/IMG_1450.png" alt="" />
-                    <div class="hov-in ">
-                        <!-- <a href="#"></a> -->
-                        <h6 style="margin-top: 50px;">Liver Tonic</h6>
-                    </div>
-                </div>
+        <div class="card">
+            <img id="mainImage9" src="./images/IMG_1441.png" alt="Main Image 9">
+            <div class="thumbnails">
+                <img class="thumbnail" src="./images/IMG_1441.png" alt="Thumbnail 9"
+                    onclick="changeMainImage('mainImage9', './images/IMG_1441.png')">
+                <img class="thumbnail" src="./images/IMG_1442.png" alt="Thumbnail 9"
+                    onclick="changeMainImage('mainImage9', './images/IMG_1442.png')">
             </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/IMG_1433.png" alt="" />
-                    <div class="hov-in">
-                        <!-- <a href="#"></a> -->
-                        <h6 style="margin-top: 50px;">pro name</h6>
-                    </div>
-                </div>
+        </div>
+        <div class="card">
+            <img id="mainImage10" src="./images/IMG_1445.png" alt="Main Image 10">
+            <div class="thumbnails">
+                <img class="thumbnail" src="./images/IMG_1445.png" alt="Thumbnail 10"
+                    onclick="changeMainImage('mainImage10', './images/IMG_1445.png')">
+                <img class="thumbnail" src="./images/IMG_1446.png" alt="Thumbnail 10"
+                    onclick="changeMainImage('mainImage10', './images/IMG_1446.png')">
             </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/IMG_1435.png" alt="" />
-                    <div class="hov-in">
-                        <!-- <a href="#"></a> -->
-                        <h6 style="margin-top: 50px;">pro name</h6>
-                    </div>
-                </div>
+        </div>
+        <div class="card">
+            <img id="mainImage11" src="./images/IMG_1435.png" alt="Main Image 11">
+            <div class="thumbnails">
+                <img class="thumbnail" src="./images/IMG_1435.png" alt="Thumbnail 11"
+                    onclick="changeMainImage('mainImage11', './images/IMG_1435.png')">
+                <img class="thumbnail" src="./images/IMG_1436.png" alt="Thumbnail 11"
+                    onclick="changeMainImage('mainImage11', './images/IMG_1436.png')">
             </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/IMG_1437.png" alt="" />
-                    <div class="hov-in">
-                        <!-- <a href="#"></a> -->
-                        <h6 style="margin-top: 50px;">pro name</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/IMG_1439.png" alt="" />
-                    <div class="hov-in">
-                        <!-- <a href="#"></a> -->
-                        <h6 style="margin-top: 50px;">pro name</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/IMG_1441.png" alt="" />
-                    <div class="hov-in">
-                        <!-- <a href="#"></a> -->
-                        <h6 style="margin-top: 50px;">pro name</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/IMG_1443.png" alt="" />
-                    <div class="hov-in">
-                        <!-- <a href="#"></a> -->
-                        <h6 style="margin-top: 50px;">pro name</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/IMG_1445.png" alt="" />
-                    <div class="hov-in">
-                        <!-- <a href="#"></a> -->
-                        <h6 style="margin-top: 50px;">pro name</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/IMG_1447.png" alt="" />
-                    <div class="hov-in">
-                        <!-- <a href="#"></a> -->
-                        <h6 style="margin-top: 50px;">pro name</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/IMG_1449.png" alt="" />
-                    <div class="hov-in">
-                        <!-- <a href="#"></a> -->
-                        <h6 style="margin-top: 50px;">pro name</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/IMG_1451.png" alt="" />
-                    <div class="hov-in">
-                        <!-- <a href="#"></a> -->
-                        <h6 style="margin-top: 50px;">pro name</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/IMG_1453.png" alt="" />
-                    <div class="hov-in">
-                        <!-- <a href="#"></a> -->
-                        <h6 style="margin-top: 50px;">pro name</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/IMG_1455.png" alt="" />
-                    <div class="hov-in">
-                        <!-- <a href="#"></a> -->
-                        <h6 style="margin-top: 50px;">pro name</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/IMG_1458.png" alt="" />
-                    <div class="hov-in">
-                        <!-- <a href="#"></a> -->
-                        <h6 style="margin-top: 50px;">pro name</h6>
-                    </div>
-                </div>
+        </div>
+        <div class="card">
+            <img id="mainImage11" src="./images/IMG_1437.png" alt="Main Image 11">
+            <div class="thumbnails">
+                <img class="thumbnail" src="./images/IMG_1437.png" alt="Thumbnail 11"
+                    onclick="changeMainImage('mainImage11', './images/IMG_1437.png')">
+                <img class="thumbnail" src="./images/IMG_1438.png" alt="Thumbnail 11"
+                    onclick="changeMainImage('mainImage11', './images/IMG_1438.png')">
             </div>
         </div>
     </div>
-    <!-- End Instagram Feed  -->
+
+    <!-- Add more cards here -->
+    </div>
+
+
+
 
 
     <!-- Start Footer  -->
@@ -481,7 +354,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-link-contact">
+                        <div class="footer-link-contact">x
                             <h4>Contact Us</h4>
                             <ul>
                                 <li>
@@ -531,31 +404,17 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
-
     <script>
-        function showImage(imageSrc) {
-            document.getElementById('mainImg').src = imageSrc;
+        function changeMainImage(mainImageId, newImageUrl) {
+            var mainImage = document.getElementById(mainImageId);
+            mainImage.style.opacity = '0'; // Fade out
+            setTimeout(function () {
+                mainImage.src = newImageUrl;
+                mainImage.style.opacity = '1'; // Fade in
+            }, 500); // Delay to match transition duration
         }
     </script>
-    <script>
-        function toggleVisibility(buttonId, textId) {
-            const button = document.getElementById(buttonId);
-            const text = document.getElementById(textId);
-            button.addEventListener("click", function () {
-                if (text.classList.contains("hidden")) {
-                    text.classList.remove("hidden");
-                    button.textContent = "Hide Text";
-                } else {
-                    text.classList.add("hidden");
-                    button.textContent = "Show Text";
-                }
-            });
-        }
 
-        toggleVisibility("button1", "text1");
-        toggleVisibility("button2", "text2");
-        toggleVisibility("button3", "text3");
-    </script>
 </body>
 
 </html>

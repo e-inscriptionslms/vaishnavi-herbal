@@ -118,7 +118,7 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./mainproduct.html">products</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -201,9 +201,9 @@
                 lifestyle with no added sugar makes it an ideal nutrition for diabetic. A potent herbal blend with low
                 GI and high fiber to help you meet 100% RDA for diabetics.</p>
                 <div class="buttons">
-                    <a href="#" id="button1" class="btn help-btn">Benefits</a>
-                    <a href="#" id="button2" class="btn show-btn">Ingredients</a>
-                    <a href="#" id="button3" class="btn more-btn">How to use</a>
+                    <button href="" id="button1" class="btn help-btn">Benefits</button>
+                    <button href="" id="button2" class="btn show-btn">Ingredients</button>
+                    <button href="" id="button3" class="btn more-btn">How to use</button>
                 </div>
                 <p id="text1" class="hidden">This is text 1.</p>
                 <p id="text2" class="hidden">This is text 2.</p>
@@ -230,7 +230,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="containerr">
 
         <div class="product-image">
             <img src="./images/IMG_1439.png" alt="Product Image">
@@ -244,7 +244,7 @@
                 lifestyle with no added sugar makes it an ideal nutrition for diabetic. A potent herbal blend with low
                 GI and high fiber to help you meet 100% RDA for diabetics.</p>
 
-            <div class="feature-container">
+            <div class="feature-containerr">
                 <ul class="left-feature-list">
                     <li>
                         <img src="./images/images.png" style="width: 10%; height: 20px;" alt="Vegetarian">
@@ -538,12 +538,25 @@
             document.getElementById('mainImg').src = imageSrc;
         }
     </script>
-    <script>
-        document.getElementById("showButton").addEventListener("click", function () {
-            document.getElementById("hiddenText").classList.remove("hidden");
-        });
-    </script>
+     <script>
+        function toggleVisibility(buttonId, textId) {
+            const button = document.getElementById(buttonId);
+            const text = document.getElementById(textId);
+            button.addEventListener("click", function () {
+                if (text.classList.contains("hidden")) {
+                    text.classList.remove("hidden");
+                    button.textContent = "Hide Text";
+                } else {
+                    text.classList.add("hidden");
+                    button.textContent = "Show Text";
+                }
+            });
+        }
 
+        toggleVisibility("button1", "text1");
+        toggleVisibility("button2", "text2");
+        toggleVisibility("button3", "text3");
+    </script>
 </body>
 
 </html>

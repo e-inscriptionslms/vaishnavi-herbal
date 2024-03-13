@@ -182,7 +182,7 @@
     <!-- End Top Search -->
 
 
-    <div class="container">
+    <div class="containerr">
         <div class="product-info">
             <h1>Liver Tonic Juice</h1>
             <h2>price <span>100</span> </h2>
@@ -201,9 +201,9 @@
                 lifestyle with no added sugar makes it an ideal nutrition for diabetic. A potent herbal blend with low
                 GI and high fiber to help you meet 100% RDA for diabetics.</p>
                 <div class="buttons">
-                    <a href="#" id="button1" class="btn help-btn">Benefits</a>
-                    <a href="#" id="button2" class="btn show-btn">Ingredients</a>
-                    <a href="#" id="button3" class="btn more-btn">How to use</a>
+                    <button href="" id="button1" class="btn help-btn">Benefits</button>
+                    <button href="" id="button2" class="btn show-btn">Ingredients</button>
+                    <button href="" id="button3" class="btn more-btn">How to use</button>
                 </div>
                 <p id="text1" class="hidden">This is text 1.</p>
                 <p id="text2" class="hidden">This is text 2.</p>
@@ -231,7 +231,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="containerr">
 
         <div class="product-image">
             <img src="./images/IMG_1430.png" alt="Product Image">
@@ -540,10 +540,24 @@
         }
     </script>
     <script>
-        document.getElementById("showButton").addEventListener("click", function() {
-          document.getElementById("hiddenText").classList.remove("hidden");
-        });
-      </script>
+        function toggleVisibility(buttonId, textId) {
+            const button = document.getElementById(buttonId);
+            const text = document.getElementById(textId);
+            button.addEventListener("click", function () {
+                if (text.classList.contains("hidden")) {
+                    text.classList.remove("hidden");
+                    button.textContent = "Hide Text";
+                } else {
+                    text.classList.add("hidden");
+                    button.textContent = "Show Text";
+                }
+            });
+        }
+
+        toggleVisibility("button1", "text1");
+        toggleVisibility("button2", "text2");
+        toggleVisibility("button3", "text3");
+    </script>
 
 </body>
 
