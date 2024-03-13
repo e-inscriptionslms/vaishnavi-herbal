@@ -201,12 +201,13 @@
                 lifestyle with no added sugar makes it an ideal nutrition for diabetic. A potent herbal blend with low
                 GI and high fiber to help you meet 100% RDA for diabetics.</p>
             <div class="buttons">
-                <a href="#" class="btn help-btn">Benefits</a>
-                <a href="#" class="btn show-btn">Ingredients</a>
-                <a href="#" class="btn more-btn">How to use</a>
-
-
+                <a href="#" id="showButton" class="btn help-btn">Benefits</a>
+                <a href="#" id="showButton" class="btn show-btn">Ingredients</a>
+                <a href="#" id="showButton" class="btn more-btn">How to use</a>
             </div>
+            <p id="hiddenText" class="hidden">This text is hidden by default. It will be shown when the button is
+                clicked.</p>
+
 
         </div>
         <div class="product-image">
@@ -536,7 +537,11 @@
             document.getElementById('mainImg').src = imageSrc;
         }
     </script>
-
+    <script>
+        document.getElementById("showButton").addEventListener("click", function () {
+            document.getElementById("hiddenText").classList.remove("hidden");
+        });
+    </script>
 </body>
 
 </html>

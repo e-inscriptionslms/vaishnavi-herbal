@@ -200,13 +200,15 @@
                 vitamins, Gluten free, GMO free, trans fat free, preservative free, easy to incorporate in daily
                 lifestyle with no added sugar makes it an ideal nutrition for diabetic. A potent herbal blend with low
                 GI and high fiber to help you meet 100% RDA for diabetics.</p>
-            <div class="buttons">
-                <a href="#" class="btn help-btn">Benefits</a>
-                <a href="#" class="btn show-btn">Ingredients</a>
-                <a href="#" class="btn more-btn">How to use</a>
+                <div class="buttons">
+                    <a href="#" id="button1" class="btn help-btn">Benefits</a>
+                    <a href="#" id="button2" class="btn show-btn">Ingredients</a>
+                    <a href="#" id="button3" class="btn more-btn">How to use</a>
+                </div>
+                <p id="text1" class="hidden">This is text 1.</p>
+                <p id="text2" class="hidden">This is text 2.</p>
+                <p id="text3" class="hidden">This is text 3.</p>
 
-
-            </div>
 
         </div>
         <div class="product-image">
@@ -536,7 +538,11 @@
             document.getElementById('mainImg').src = imageSrc;
         }
     </script>
-
+    <script>
+        document.getElementById("showButton").addEventListener("click", function () {
+            document.getElementById("hiddenText").classList.remove("hidden");
+        });
+    </script>
 </body>
 
 </html>

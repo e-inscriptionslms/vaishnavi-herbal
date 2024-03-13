@@ -3140,9 +3140,24 @@ ul.cart-list>li.total>.btn:hover {
 .text-dark-brown {
     color: brown;
 }
-.button_icon{
+
+.button_icon {
     background-color: #000;
 }
-.section-title{
+
+.section-title {
     font-size: 50px;
+}
+
+
+
+
+
+
+
+
+/* button  */
+
+.hidden {
+    display: none;
 }
