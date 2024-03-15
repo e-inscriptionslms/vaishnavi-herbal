@@ -1520,7 +1520,7 @@ ul.cart-list>li.total>.btn:hover {
 
 .hov-in {
     opacity: 0;
-    background: rgba(211, 59, 51, 0.5);
+    background: #5c8442;
     bottom: -100%;
     position: absolute;
     width: 100%;
