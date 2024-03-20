@@ -34,6 +34,10 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -97,16 +101,7 @@
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item active"><a class="nav-link" href="about.html">About Us</a></li>
-                        <li class="dropdown">
-                            <a href="categories.html" class="nav-link dropdown-toggle arrow"
-                                data-toggle="dropdown">categories</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="categories.html">categories 1</a></li>
-                                <li><a href="categories.html">categories 1</a></li>
-                                <li><a href="categories.html">categories 1</a></li>
-                                <li><a href="categories.html">categories 1</a></li>
-                            </ul>
-                        </li>
+
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="./mainproduct.html">products</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
@@ -185,15 +180,17 @@
     <!-- End All Title Box -->
 
     <!-- Start About Page  -->
+
     <div class="about-box-main">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+
+                <div class="col-lg-6 " data-aos="fade-right">
                     <div class="banner-frame"> <img class="img-fluid" src="images/about-img.jpg" alt="" />
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <h2 class="noo-sh-title-top">We are <span>Freshshop</span></h2>
+                <div class="col-lg-6 " data-aos="fade-left">
+                    <h2 class="noo-sh-title-top">We are <span>VAISHNAVI HERBAL</span></h2>
                     <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                         laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
                         beatae vitae dicta sunt explicabo. Nemo enim ipsam
@@ -450,7 +447,7 @@
                                 </li>
                                 <li>
                                     <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+91
-                                            8770478737</a></p>yy
+                                            8770478737</a></p>
                                 </li>
                                 <li>
                                     <p><i class="fas fa-envelope"></i>Email: <a
@@ -466,11 +463,11 @@
     <!-- End Footer  -->
 
     <!-- Start copyright  -->
-    <div class="footer-copyright">
+    <!-- <div class="footer-copyright">
         <p class="footer-company">All Rights Reserved. &copy; 2018 <a href="#">ThewayShop</a> Design By :
             <a href="https://html.design/">html design</a>
         </p>
-    </div>
+    </div> -->
     <!-- End copyright  -->
 
     <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
@@ -491,6 +488,10 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

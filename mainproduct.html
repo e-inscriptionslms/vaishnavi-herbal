@@ -32,7 +32,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -94,16 +95,7 @@
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                        <li class="dropdown">
-                            <a href="categories.html" class="nav-link dropdown-toggle arrow"
-                                data-toggle="dropdown">categories</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="categories.html">categories 1</a></li>
-                                <li><a href="categories.html">categories 1</a></li>
-                                <li><a href="categories.html">categories 1</a></li>
-                                <li><a href="categories.html">categories 1</a></li>
-                            </ul>
-                        </li>
+
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="./mainproduct.html">products</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
@@ -168,7 +160,7 @@
     </div>
     <!-- End Top Search -->
     <div class="containerr">
-        <div class="card">
+        <div class="card" data-aos="fade-up-right">
             <img id="mainImage1" src="./images/IMG_1455.png" alt="Main Image 1">
             <div class="thumbnails">
                 <img class="thumbnail" src="./images/IMG_1456.png" alt="Thumbnail 1"
@@ -177,7 +169,7 @@
                     onclick="changeMainImage('mainImage1', './images/IMG_1455.png')">
             </div>
         </div>
-        <div class="card">
+        <div class="card"data-aos="fade-up-left">
             <img id="mainImage2" src="./images/IMG_1431.png" alt="Main Image 2">
             <div class="thumbnails">
                 <img class="thumbnail" src="./images/IMG_1432.png" alt="Thumbnail 2"
@@ -186,7 +178,7 @@
                     onclick="changeMainImage('mainImage2', './images/IMG_1431.png')">
             </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up-right">
             <img id="mainImage3" src="./images/IMG_1449.png" alt="Main Image 3">
             <div class="thumbnails">
                 <img class="thumbnail" src="./images/IMG_1449.png" alt="Thumbnail 3"
@@ -195,7 +187,7 @@
                     onclick="changeMainImage('mainImage3', './images/IMG_1450.png')">
             </div>
         </div>
-        <div class="card">
+        <div class="card"data-aos="fade-up-left">
             <img id="mainImage4" src="./images/IMG_1443.png" alt="Main Image 4">
             <div class="thumbnails">
                 <img class="thumbnail" src="./images/IMG_1443.png" alt="Thumbnail 4"
@@ -204,7 +196,7 @@
                     onclick="changeMainImage('mainImage4', './images/IMG_1444.png')">
             </div>
         </div>
-        <div class="card">
+        <div class="card"data-aos="fade-up-right">
             <img id="mainImage5" src="./images/IMG_1439.png" alt="Main Image 5">
             <div class="thumbnails">
                 <img class="thumbnail" src="./images/IMG_1439.png" alt="Thumbnail 5"
@@ -213,7 +205,7 @@
                     onclick="changeMainImage('mainImage5', './images/IMG_1440.png')">
             </div>
         </div>
-        <div class="card">
+        <div class="card"data-aos="fade-up-left">
             <img id="mainImage6" src="./images/IMG_1451.png" alt="Main Image 6">
             <div class="thumbnails">
                 <img class="thumbnail" src="./images/IMG_1451.png" alt="Thumbnail 6"
@@ -222,7 +214,7 @@
                     onclick="changeMainImage('mainImage6', './images/IMG_1444.png')">
             </div>
         </div>
-        <div class="card">
+        <div class="card"data-aos="fade-up-right">
             <img id="mainImage7" src="./images/IMG_1453.png" alt="Main Image 7">
             <div class="thumbnails">
                 <img class="thumbnail" src="./images/IMG_1453.png" alt="Thumbnail 7"
@@ -232,7 +224,7 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card"data-aos="fade-up-left">
             <img id="mainImage8" src="./images/IMG_1447.png" alt="Main Image 8">
             <div class="thumbnails">
                 <img class="thumbnail" src="./images/IMG_1447.png" alt="Thumbnail 8"
@@ -241,7 +233,7 @@
                     onclick="changeMainImage('mainImage8', './images/IMG_1448.png')">
             </div>
         </div>
-        <div class="card">
+        <div class="card"data-aos="fade-up-right">
             <img id="mainImage9" src="./images/IMG_1441.png" alt="Main Image 9">
             <div class="thumbnails">
                 <img class="thumbnail" src="./images/IMG_1441.png" alt="Thumbnail 9"
@@ -250,7 +242,7 @@
                     onclick="changeMainImage('mainImage9', './images/IMG_1442.png')">
             </div>
         </div>
-        <div class="card">
+        <div class="card"data-aos="fade-up-left">
             <img id="mainImage10" src="./images/IMG_1445.png" alt="Main Image 10">
             <div class="thumbnails">
                 <img class="thumbnail" src="./images/IMG_1445.png" alt="Thumbnail 10"
@@ -259,7 +251,7 @@
                     onclick="changeMainImage('mainImage10', './images/IMG_1446.png')">
             </div>
         </div>
-        <div class="card">
+        <div class="card"data-aos="fade-up-right"data-aos="fade-up-left">
             <img id="mainImage11" src="./images/IMG_1435.png" alt="Main Image 11">
             <div class="thumbnails">
                 <img class="thumbnail" src="./images/IMG_1435.png" alt="Thumbnail 11"
@@ -268,7 +260,7 @@
                     onclick="changeMainImage('mainImage11', './images/IMG_1436.png')">
             </div>
         </div>
-        <div class="card">
+        <div class="card"data-aos="fade-up-left">
             <img id="mainImage11" src="./images/IMG_1437.png" alt="Main Image 11">
             <div class="thumbnails">
                 <img class="thumbnail" src="./images/IMG_1437.png" alt="Thumbnail 11"
@@ -414,7 +406,19 @@
             }, 500); // Delay to match transition duration
         }
     </script>
+       <script>
+        const smallImg = document.getElementsByClassName("small-img");
+        const mainImg = document.getElementById("mainImg");
 
+        for (let i = 0; i < smallImg.length; i++) {
+            smallImg[i].onclick = function () {
+                mainImg.src = smallImg[i].src;
+            };
+        };
+    </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
